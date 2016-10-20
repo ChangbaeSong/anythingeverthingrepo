@@ -1,0 +1,15 @@
+<h1>{{ title }}</h1>
+<div [style.color]="hahaColor">
+    Hello {{ name }}
+</div>
+
+<input type="text" (keyup.enter)="name = $event.target.value">
+<br>
+<input type="text" [(ngModel)]="name">
+
+<button (click)="changeSuitColor()">
+    change suit color
+</button>
+<br />
+
+<app-customers></app-customers>
